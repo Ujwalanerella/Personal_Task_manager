@@ -15,7 +15,7 @@ Database: MySQL
 
 ⚙️ Installation & Setup
 Clone the repository
-git clone https://github.com/Ujwalanerella/Personal_Task_Manager.git.git
+git clone https://github.com/Ujwalanerella/Personal_Task_Manager.git
 cd <Personal_Task_Manager>
 
 Install dependencies
@@ -34,4 +34,5 @@ Update server.js with your MySQL username and password.
 Run the server
 npm start
 Open in browser
+
 http://localhost:3000
