@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f8;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #222;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input[type="text"], select {
+  flex: 1 1 45%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0,123,255,0.3);
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+li {
+  background: #f8f9fa;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-info {
+  flex: 1 1 auto;
+}
+
+.task-info strong {
+  font-size: 15px;
+  color: #333;
+}
+
+.task-info em {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Action Icons */
+.task-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.task-actions span {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.task-actions span:hover {
+  background: #e0e0e0;
+}
+
+/* Status Badges */
+.status {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.status-pending {
+  background-color: #dc3545;
+}
+
+.status-completed {
+  background-color: #28a745; 
+}
+
+.status-in-progress {
+  background-color: #ffc107; 
+  color: #333;
+}
+
+/* Priority Badges */
+.priority {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.priority-low {
+  background-color: #17a2b8;
+}
+
+.priority-medium {
+  background-color: #ff9800; 
+}
+
+.priority-high {
+  background-color: #e91e63;
+}
